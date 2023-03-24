@@ -1,0 +1,6 @@
+SELECT n, 
+CASE
+    WHEN n = 0 THEN 1
+    ELSE CAST(POWER(n, 2) * 6 + 2 AS INT)
+END
+AS res FROM squares;
